@@ -1,0 +1,159 @@
+* {
+    padding:0px;
+    margin:0px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#logo{
+    margin-top: -5px;
+    max-width:150px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+    margin-left: 20%;
+    border-radius: 20px;
+}
+
+li .menu-black-friday {
+	background-color: black;	
+}
+
+li {
+    float: left;
+}
+
+li a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px 15px;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    margin-left: 35px;
+}
+
+li a:hover {
+    background-color: rgb(13, 2, 59);
+}
+
+#header {
+    height: 51px;
+    width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    background-image: radial-gradient(circle at 24.67% 43.21%, #f598ff 0, #a576ff 25%, #5650cc 50%, #002b87 75%, #00094c 100%);
+    border-radius: 0px 0px 0px 0px;
+    position: fixed;
+    margin-left: 0%;
+    margin-right: 0%;
+    z-index: 1;
+}
+.right {
+    margin-right: 2%;
+    display: inline-block;
+    height: 600px;
+    width: 47%;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 5px;
+    float: right;
+
+}
+
+h2, .title-xl {
+    font-family: "Darker Grotesque","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #00094c;
+    font-weight: 900;
+    font-size: 46px;
+    line-height: 56px;
+}
+
+span {
+    color: #a576ff;
+}
+
+.text-1p {
+    font-family: "Nunito Sans","Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    color: #182020;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.input-form-email {
+    width:600px;
+    height: 30px;
+    position: relative;
+}
+
+.button-form-email{
+    width:603px;
+    height: 30px;
+    position: relative;
+    background-color: #5650cc;
+    font-weight: bold;
+}
+
+.left {
+    margin-left: 2%;
+    display: inline-block;
+    height: 600px;
+    width: 47%;
+    margin-top: 100px;
+    margin-bottom: 5px;
+    background-color: white;
+    border-radius: 5px;
+    float: left;
+}
+
+.bellow {
+    margin-left: 0%;
+    margin-right: 0%;
+	margin-top: 100px;
+    height: 700px;
+    background-image: radial-gradient(circle at 24.67% 43.21%, #f598ff 0, #a576ff 25%, #5650cc 50%, #002b87 75%, #00094c 100%);
+    border-radius: 5px;
+    clear: both;
+}
+
+#footer {
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 70px;
+    background-color: gray;
+    border-radius: 5px;
+    clear: both;
+}
+
+.product {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 15%;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    border-radius: 10px 10px 10px 10px;
+	
+}
+
+.card-container{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.h2-descontos{
+    text-align: center;
+    color: white;
+}
