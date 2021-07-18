@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="js/scripts.js"></script>
     <title>5 Estrelas</title>
 
     <script>
@@ -31,7 +32,7 @@
         </div>
         <div class="right">
             <h2 class="title">Oferecemos serviços para todo tipo de área
-                <span>com uma equipe de profissionais 5 estrelas</span>
+                <span class="title2">com uma equipe de profissionais 5 estrelas</span>
             </h2>
             <br>
             <p class="text-1p">
@@ -45,8 +46,8 @@
             <br>
             <br>
             <form class="formulario-email">
-                <input type="email" class="input-form-email" name="email" placeholder="Seu email" required="">
-                <input type="button" class="button-form-email" value="Quero Cupons" onclick="msg()">
+                <input type="email" name="email" id="txtEmail" class="input-form-email" placeholder="Seu email" required="">
+                <button class="button-form-email" type="submit" onclick="salvaEmail(event)">Quero receber cupons sensacionais!</button>
             </form>
         </div>
 
@@ -56,61 +57,106 @@
             <div class="card">
                 <div class="card-container">            
                     <div class="product">
+                        <br>
                         <h3 class="service-name">Troca de Óleo</h3>
-                        <img src="images/encanador.png">
+                        <br>
+                        <img src="images/troca_de_oleo.png" width="120" height="80">
+                        <br>
                         <p class="description">Trocamos o óleo do seu carro na sua casa</p>
-                        <span class="price"> 15% de desconto</span>
-                        <button class="add-cart">Adicionar ao carrinho</button>
+                        <br>
+                        <p class="price"> 15% de desconto</p>
+                        <br>
+                        <button class="add-cart">&nbsp;&nbsp;Agendar&nbsp;&nbsp;</button>
                     </div>
                     <div class="product">
+                        <br>
                         <h3 class="service-name">Serviços elétricos</h3>
-                        <img src="images/seguranca.png">
+                        <br>
+                        <img src="images/servico-eletrico.png" width="120" height="80">
+                        <br>
                         <p class="description">Que tal trocar seu chuveiro? Ou aquela tomada ?</p>
-                        <span class="price"> 30% de desconto</span>
-                        <button class="add-cart">Adicionar ao carrinho</button>
+                        <br>
+                        <p class="price"> 30% de desconto</p>
+                        <br>
+                        <button class="add-cart">&nbsp;&nbsp;Agendar&nbsp;&nbsp;</button>
                     </div>
                     <div class="product">
+                        <br>
                         <h3 class="service-name">Troca do sifão</h3>
-                        <img src="images/encanador.png">
+                        <br>
+                        <img src="images/troca-sifao.png" width="120" height="80">
+                        <br>
                         <p class="description">Vamos acabar com aquele vazamento de baixo da pia</p>
-                        <span class="price"> 20% de desconto</span>
-                        <button class="add-cart">Adicionar ao carrinho</button>
+                        <br>
+                        <p class="price"> 20% de desconto</p>
+                        <br>
+                        <button class="add-cart">&nbsp;&nbsp;Agendar&nbsp;&nbsp;</button>
                     </div>
         
                     <div class="product">
+                        <br>
                         <h3 class="service-name">Chaveiro</h3>
-                        <img src="images/seguranca.png">
-                        <p class="description">A chave quebrou na fechadura? Não se preocupe, nós resolvemos.</p>
-                        <span class="price"> 30% de desconto</span>
-                        <button class="add-cart">Adicionar ao carrinho</button>
+                        <br>
+                        <img src="images/chaveiro.png" width="120" height="80">
+                        <br>
+                        <p class="description">A chave quebrou na fechadura? Nós resolvemos.</p>
+                        <br>
+                        <p class="price"> 30% de desconto</p>
+                        <br>
+                        <button class="add-cart">&nbsp;&nbsp;Agendar&nbsp;&nbsp;</button>
+                        <br>
                     </div>
                     <div class="product">
-                        <h3 class="service-name">Encanador</h3>
-                        <img src="images/encanador.png">
-                        <p class="description">Resolvemos qualquer problema hidraulico</p>
-                        <span class="price"> 15% de desconto</span>
-                        <button class="add-cart">Adicionar ao carrinho</button>
+                        <br>
+                        <h3 class="service-name">Passeio com PET</h3>
+                        <br>
+                        <img src="images/passeio-pet.png" width="120" height="80">
+                        <br>
+                        <p class="description">Sem tempo? Passeamos com seu pet.</p>
+                        <br>
+                        <p class="price"> 60% de desconto</p>
+                        <br>
+                        <button class="add-cart">&nbsp;&nbsp;Agendar&nbsp;&nbsp;</button>
+                        <br>
                     </div>
                     <div class="product">
-                        <h3 class="service-name">Segurança</h3>
-                        <img src="images/seguranca.png">
-                        <p class="description">Temos a melhor equipe de segurança privada</p>
-                        <span class="price"> 30% de desconto</span>
-                        <button class="add-cart">Adicionar ao carrinho</button>
+                        <br>
+                        <h3 class="service-name">Faxina</h3>
+                        <br>
+                        <img src="images/faxina.png" width="120" height="80">
+                        <br>
+                        <p class="description">Que tal deixar sua casa super limpa e cheirosa.</p>
+                        <br>
+                        <p class="price"> 10% de desconto</p>
+                        <br>
+                        <button class="add-cart">&nbsp;&nbsp;Agendar&nbsp;&nbsp;</button>
+                        <br>
                     </div>
                     <div class="product">
-                        <h3 class="service-name">Encanador</h3>
-                        <img src="images/encanador.png">
-                        <p class="description">Resolvemos qualquer problema hidraulico</p>
-                        <span class="price"> 15% de desconto</span>
-                        <button class="add-cart">Adicionar ao carrinho</button>
+                        <br>
+                        <h3 class="service-name">Montagem de moveis</h3>
+                        <br>
+                        <img src="images/montagem-moveis.png" width="120" height="80">
+                        <br>
+                        <p class="description">Montamos qualquer tipo de moveis.</p>
+                        <br>
+                        <p class="price"> 25% de desconto</p>
+                        <br>
+                        <button class="add-cart">&nbsp;&nbsp;Agendar&nbsp;&nbsp;</button>
+                        <br>
                     </div>
                     <div class="product">
-                        <h3 class="service-name">Segurança</h3>
-                        <img src="images/seguranca.png">
-                        <p class="description">Temos a melhor equipe de segurança privada</p>
-                        <span class="price"> 30% de desconto</span>
-                        <button class="add-cart">Adicionar ao carrinho</button>
+                        <br>
+                        <h3 class="service-name">Pintor</h3>
+                        <br>
+                        <img src="images/pintor.png" width="120" height="80">
+                        <br>
+                        <p class="description">Esta cansado daquela cor? Mudamos para você.</p>
+                        <br>
+                        <p class="price"> 5% de desconto</p>
+                        <br>
+                        <button class="add-cart">&nbsp;&nbsp;Agendar&nbsp;&nbsp;</button>
+                        <br>
                     </div>
                 </div>
                 
@@ -118,7 +164,17 @@
         </div>
     </div>
     <div id="footer">
+        <br>
+        <p class="price"> Criado por Lucas Maia Franco</p>
+        <br>
+        <a href="https://github.com/lucasmaiafranco" target="_blank">
+        <img src="images/icon-github.png">
+        </a>
+        <a href="https://www.linkedin.com/in/lucas-maia-franco-b278a331/" target="_blank">
+        <img src="images/icon-linkedin.png">
+        </a>
 
+        <br>
     </div>
 
     

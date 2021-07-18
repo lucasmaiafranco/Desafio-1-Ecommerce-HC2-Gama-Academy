@@ -66,7 +66,6 @@ li a:hover {
     background-color: white;
     border-radius: 5px;
     float: right;
-
 }
 
 h2, .title-xl {
@@ -77,7 +76,7 @@ h2, .title-xl {
     line-height: 56px;
 }
 
-span {
+.title2 {
     color: #a576ff;
 }
 
@@ -119,18 +118,8 @@ span {
     margin-left: 0%;
     margin-right: 0%;
 	margin-top: 100px;
-    height: 700px;
+    height: 800px;
     background-image: radial-gradient(circle at 24.67% 43.21%, #f598ff 0, #a576ff 25%, #5650cc 50%, #002b87 75%, #00094c 100%);
-    border-radius: 5px;
-    clear: both;
-}
-
-#footer {
-    margin-left: 2%;
-    margin-right: 2%;
-    height: 70px;
-    background-color: gray;
-    border-radius: 5px;
     clear: both;
 }
 
@@ -153,11 +142,60 @@ span {
     background-color: rgb(255, 255, 255);
     border-radius: 20px 20px 20px 20px;
     align-items: center;
-    cursor: pointer;
 }
+
+.product:hover {
+    background-color: rgb(13, 2, 59);
+    color: white;
+}
+
 
 .h2-descontos{
     text-align: center;
     color: white;
 
 }
+div img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.service-name {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.description{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.price{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bold;
+}
+
+.add-cart{
+    margin-left: 65px;
+    border-radius: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+
+#footer {
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 70px;
+    background-color: white;
+    border-radius: 5px;
+    clear: both;
+    float: center;
+}
+
